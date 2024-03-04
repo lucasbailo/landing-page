@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyPaste</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0 auto;
+        }
+    
+        :root {
+            --font: 'Inter', sans-serif;
+            --font-2: Georgia, 'Times New Roman', Times, serif;
+            --color-text: #101828;
+            --background-one: #FFFFFF;
+            --background-two: #F9FAFB;
+            --button-one: #FF5B00;
+            --color-price: green;
+            --color-footer-one: #EBEEF1;
+            --color-footer-two: #353535;
+        }
+    
+        html {
+            width: 100vw;
+        }
+    
+        body {
+            font-family: var(--font);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text);
+            max-width: 100vw;
+        }
+    
+        .card-style,
+        .card-style2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+    
+        .card-style2 {
+            background: var(--background-two);
+        }
+    
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+    
+        p {
+            font-size: 30px;
+            padding: 0 5rem;
+        }
+    
+        span {
+            font-size: 30px;
+        }
+    
+        .expire {
+            margin-top: 3rem;
+            color: red;
+        }
+    
+        ul {
+            list-style-type: none;
+            font-size: 30px;
+            gap: 0.5rem;
+            align-items: flex-start;
+            text-align: left;
+        }
+    
+        li {
+            margin: 1rem 0;
+        }
+    
+        .img2 {
+            width: 25rem;
+            height: 35rem;
+        }
+    
+        a {
+            text-decoration: none;
+        }
+    
+        button {
+            padding: 1.5rem 10rem;
+            background: var(--button-one);
+            color: white;
+            font-weight: 700;
+            border-radius: 50px;
+            font-size: 32px;
+            border-color: var(--button-one);
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 40px 15px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+    
+        button:hover {
+            border-color: orange;
+            background: orange;
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: 0.1s;
+        }
+    
+        button:active {
+            border-color: green;
+            background: green;
+            transform: scale(0.95);
+        }
+    
+        .video {
+            width: 45rem;
+            height: 25rem;
+        }
+    
+        .quote {
+            font-family: var(--font-2);
+            font-style: italic;
+        }
+    
+        .icon {
+            width: 32px;
+            height: 32px;
+        }
+    
+        strong {
+            font-weight: 700;
+        }
+    
+        .img-quote {
+            border-radius: 20px;
+        }
+    
+        .picture {
+            width: 78px;
+            border-radius: 50px;
+        }
+    
+        .profile {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            align-items: center;
+        }
+    
+        .name-rate {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .name {
+            font-size: 26px;
+            font-weight: 700;
+        }
+    
+        .icon2 {
+            width: 154px;
+        }
+    
+        .card-icons {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    
+        .footer,
+        .footer2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+    
+        .footer {
+            background: var(--color-footer-one);
+        }
+    
+        .footer2 {
+            background: var(--color-footer-two);
+        }
+    
+        .price {
+            color: rgb(3, 204, 3);
+            font-size: 69px;
+        }
+    
+        .old-price {
+            text-decoration: line-through;
+        }
+    </style>
+    <main> <!--1° Bloco-->
+        <div class="card-style">
+            <h1>Organize seu banheiro com facilidade e estilo!</h1>
+            <p>Estilo, organização e praticidade!</p>
+            <img class="img2" src="https://i.ibb.co/wMHRF9d/gif2-Feito-com-o-Clipchamp.gif"
+                alt="Show functions of the product" />
+            <p>O nosso dispenser além de ser estiloso, ajuda a economizar pasta de dente, tempo e espaço!</p>
+            <a href="https://bailo-company.mycartpanda.com/checkout" title="Comprar agora!"><button>JÁ QUERO!</button></a>
+            <span class="expire"><strong>Oferta expira em:</strong></span>
+            <script>// <![CDATA[
+                (function (d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));
+                // ]]></script>
+            <a data-type="countdown" data-id="3860745" class="tickcounter"
+                style="display: block; width: 100%; position: relative; padding-bottom: 25%;" title="Countdown"
+                href="//www.tickcounter.com/">Countdown</a>
+        </div>
+        <!--Fim 1° Bloco--> <!--2º Bloco-->
+        <div class="card-style card-style2">
+            <h1>Por que ter esse produto?</h1>
+            <img class="img2" src="https://i.ibb.co/SNqSTk2/PNG00.png" alt="Show functions of the product" />
+            <ul>
+                <li>⭐ Vem com um suporte para as escovas da família toda.</li>
+                <li>⭐ A instalação é simples, qualquer um consegue fazer.</li>
+                <li>⭐ Deixe seu banheiro muito limpo e organizado.</li>
+                <li>⭐ Evita desperdício de pasta de dente.</li>
+                <li>⭐ Fecha automaticamente a pasta de dente, evitando secar!</li>
+            </ul>
+            <a href="https://bailo-company.mycartpanda.com/checkout" title="Compre agora!"><button>ONDE EU CONSIGO?</button>
+            </a>
+        </div>
+        <!--Fim 2° Bloco--> <!--3° Bloco-->
+        <div class="card-style">
+            <h1>Veja como é fácil!</h1>
+            <iframe class="video" src="https://youtube.com/embed/8WtZmh5Lqds?controls=1&amp;loop=0&amp;showinfo=1&amp;rel=0"
+                allowfullscreen="" frameborder="0" height="100%" width="100%"
+                data-src="//youtube.com/embed/8WtZmh5Lqds?controls=1&amp;autoplay=0&amp;loop=0&amp;showinfo=1&amp;rel=0"></iframe>
+            <p>Aqui você pode ver como é prático e fácil fazer a instalação do nosso produto e também pode ver como o
+                banheiro fica organizado e estético após a instalação</p>
+            <a class="button">JÁ QUERO!</a>
+        </div>
+        <!--Fim 3° Bloco--> <!--4° Bloco-->
+        <div class="card-style card-style2">
+            <h1>Seu banheiro muito mais organizado!</h1>
+            <p>Além da economia de pastas e praticidade, seu banheiro fica muito mais organizado e bonito!</p>
+            <img class="img2" src="https://i.ibb.co/7YtZPxT/PNG1.png" /><a
+                href="https://bailo-company.mycartpanda.com/checkout" title="Compre agora!"> <button>PASSA PRA CÁ!</button>
+            </a>
+        </div>
+        <!--Fim 4° Bloco--> <!--5° Bloco-->
+        <div class="card-style"><img src="https://i.ibb.co/L8W6FMD/notas-branco.png"
+                alt="Nota geral de avaliações: 4,4 de 5" />
+            <h1>Avaliações de nossos clientes</h1>
+            <!--MARCELA OLIVEIRA-->
+            <p class="quote"><img class="icon" src="https://i.ibb.co/2YLKCZn/7350737.png" alt="" aria-hidden="true" />
+                Demorou um pouco para chegar, entrei em contato com eles e o problema era com a transportadora.
+                <strong>Chegou certinho!</strong> <img class="icon" src="https://i.ibb.co/Ypbx52Q/invertido.png" alt=""
+                    aria-hidden="true" /></p>
+            <div class="profile"><img class="picture" src="https://i.ibb.co/b3SskcT/image.png" alt="" />
+                <div class="name-rate"><span class="name">Marcela Oliveira</span> <span>⭐⭐⭐⭐</span></div>
+            </div>
+            <img class="img2 img-quote" src="https://i.ibb.co/vw4DwqJ/testimonial3.png" /> <span>─</span>
+            <!--MARCELA OLIVEIRA--> <!--GISELE BARROS-->
+            <p class="quote"><img class="icon" src="https://i.ibb.co/2YLKCZn/7350737.png" alt="" aria-hidden="true" /> Achei
+                que não fosse funcionar, mas veio funcionou bem chegou e no <strong>prazo</strong>. <img class="icon"
+                    src="https://i.ibb.co/Ypbx52Q/invertido.png" alt="" aria-hidden="true" /></p>
+            <div class="profile"><img class="picture" src="https://i.ibb.co/wp4rxVK/image-4.png" alt="" />
+                <div class="name-rate"><span class="name">Gisele Barros</span> <span>⭐⭐⭐⭐⭐</span></div>
+            </div>
+            <img class="img2 img-quote" src="https://i.ibb.co/b36s6yZ/testimonial2.png" /> <span>─</span>
+            <!--GISELE BARROS--> <!--Carlos Henrique-->
+            <p class="quote"><img class="icon" src="https://i.ibb.co/2YLKCZn/7350737.png" alt="" aria-hidden="true" /> Levou
+                um pouco a mais do que o esperado, porém me deram todo o <strong>suporte</strong> sobre o envio. Muito
+                obrigado! <img class="icon" src="https://i.ibb.co/Ypbx52Q/invertido.png" alt="" aria-hidden="true" /></p>
+            <div class="profile"><img class="picture" src="https://i.ibb.co/9Wfw3Hv/image-1.png" alt="" />
+                <div class="name-rate"><span class="name">Carlos Henrique</span> <span>⭐⭐⭐⭐</span></div>
+            </div>
+            <img class="img2 img-quote" src="https://i.ibb.co/bgvW16y/testimonial1.png" /> <span>─</span>
+            <!--Carlos Henrique--> <!--João Carlos-->
+            <p class="quote"><img class="icon" src="https://i.ibb.co/2YLKCZn/7350737.png" alt="" aria-hidden="true" /> Fácil
+                de instalar e recebi na data esperada. Ficou <strong>lindo</strong> no meu banheiro. <img class="icon"
+                    src="https://i.ibb.co/Ypbx52Q/invertido.png" alt="" aria-hidden="true" /></p>
+            <div class="profile"><img class="picture" src="https://i.ibb.co/1TPZVNm/image-3.png" alt="" />
+                <div class="name-rate"><span class="name">João Carlos</span> <span>⭐⭐⭐⭐⭐</span></div>
+            </div>
+            <img class="img2 img-quote" src="https://i.ibb.co/RhxYC6t/parede.png" /> <span>─</span> <!--João Carlos--> <img
+                class="img2 img-quote" src="https://i.ibb.co/r68zyfB/whtas-respotas.png" /> <span>─</span> <img
+                class="img2 img-quote" src="https://i.ibb.co/ZH6SqJ9/image8.png" alt="image8" /> <span>─</span> <a
+                href="https://bailo-company.mycartpanda.com/checkout" title="Compre agora!"><button>PASSA PRA CÁ!</button>
+            </a>
+        </div>
+        <!--Fim 5° Bloco--> <!--6° Bloco-->
+        <div class="card-style">
+            <div class="card-icons"><img class="icon2" src="https://i.ibb.co/wSQk66r/261778.png" />
+                <h1>ECONOMIA</h1>
+                <p>Economize tempo, espaço e dinheiro</p>
+            </div>
+            <div class="card-icons"><img class="icon2" src="https://i.ibb.co/DCm8bVT/2317078.png" />
+                <h1>ORGANIZAÇÃO</h1>
+                <p>Deixe seu banheiro bonito e organizado</p>
+            </div>
+            <div class="card-icons"><img class="icon2" src="https://i.ibb.co/f0W3jzn/4703454.png" />
+                <h1>SATISFAÇÃO</h1>
+                <p>Tenha mais praticidade no seu dia a dia. Esquecer de tapar a pasta de dentes nunca mais!</p>
+            </div>
+        </div>
+        <!--Fim 6° Bloco--> <!--7º Bloco-->
+        <div class="card-style card-style2">
+            <h1>Perguntas Frequentes!</h1>
+            <div class="card-icons">
+                <p><strong>1 - Precisa de bateria ou pilha?</strong></p>
+                <p>Não! A tecnologia presente no produto permite que ele funcione apenas com a força aplicada na alavanca
+                </p>
+            </div>
+            <div class="card-icons">
+                <p><strong>2 - Vem com os adesivos?</strong></p>
+                <p>Sim! Acompanha os adesivos para fixar o produto na parede. Apenas cole os adesivos no produto, retire a
+                    fita e em seguida, cole na parede.</p>
+            </div>
+            <div class="card-icons">
+                <p><strong>3 - Funciona em todas as pastas?</strong></p>
+                <p>Nas marcas mais comuns e com o tubo normal, sim! A tampa sendo de rosquear, funciona normalmente!</p>
+            </div>
+        </div>
+        <!--Fim 7° Bloco--> <!--8º Bloco-->
+        <div class="card-style">
+            <p class="old-price">De R$ 79,99</p>
+            <p><strong>Por apenas:</strong></p>
+            <h1 class="price">R$ 59,99</h1>
+            <img src="https://i.ibb.co/S3kPDjj/pronto.png" alt="" /> <a
+                href="https://bailo-company.mycartpanda.com/checkout" title="Compre agora!"><button>GARANTA JÁ O
+                    SEU!</button> </a>
+        </div>
+        <!--Fim 8° Bloco--> <!--9º Bloco-->
+        <div class="footer">
+            <div class="card-icons"><img class="icon2" src="https://i.ibb.co/PYSZdpV/avi-o.png" alt="" aria-hidden="true" />
+                <p><strong>Entregamos em todo Brasil</strong></p>
+                <p>Contamos com o envio para todos os estados do Brasil, independente da distância</p>
+            </div>
+            <div class="card-icons"><img class="icon2" src="https://i.ibb.co/SvBn7yz/3483089.png" alt=""
+                    aria-hidden="true" />
+                <p><strong>Garantia de reembolso</strong></p>
+                <p>Caso seu produto não chegue, garantimos a devolução do seu dinheiro.</p>
+            </div>
+            <div class="card-icons"><img class="icon2" src="https://i.ibb.co/tJvXzcB/508190.png" alt=""
+                    aria-hidden="true" />
+                <p><strong>Suporte 24hrs</strong></p>
+                <p>Estamos aqui para te atender independente da hora. Basta nos chamar no número que foi disponibilizado.
+                </p>
+            </div>
+        </div>
+        <!--Fim 9° Bloco--> <!--10º Bloco-->
+        <div class="footer2"><img src="https://i.ibb.co/LPV6QBz/seguro-e-confiavel.png" alt="" aria-hidden="true" /></div>
+        <!--Fim 10° Bloco-->
+    </main>    
+</body>
+</html>
+
