@@ -1,6 +1,6 @@
-## Welcome again to my very first CRUD project! 👋
+## Welcome to my first Landing Page project! 👋
 
-# Cost Control (Still in dev)
+# Easy Paste
 
 ## Built with
 
